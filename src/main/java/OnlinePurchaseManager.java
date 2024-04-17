@@ -9,7 +9,7 @@ public class OnlinePurchaseManager
   /** Returns the number of purchased Gizmo objects that are electronic
   * whose manufacturer is maker, as described in part (a).
   */
-  countElectronicsByMaker(String maker) {
+ public int countElectronicsByMaker(String maker) {
         int count = 0;
         for (Gizmo g : purchases) {
             if (g.getMaker().equals(maker) && g.isElectronic()) {
